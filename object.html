@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Object </title>
+<script type="text/javascript">
+
+
+function band (singer,guitarist)
+{
+    this.singer=singer;
+    this.guitarist=guitarist;
+    this.changeSinger= function (singer)
+    {
+        this.singer=singer;
+    }
+}
+var p = new band ("James","Kirk");
+p.changeSinger("Dave");
+document.write(p.singer);
+</script>
+</head>
+<body></body>
+</html>
