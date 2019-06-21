@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Current Time
+        </title>
+        <script>
+            function showTime ()
+            {
+                var d = new Date();
+                var hour = d.getHours();
+                var min = d.getMinutes();
+                var sec= d.getSeconds();
+                document.body.innerHTML= hour+":"+min+":"+sec;
+            }
+            setInterval(showTime,1000);
+        </script>
+    </head>
+    <body></body>
+</html>
