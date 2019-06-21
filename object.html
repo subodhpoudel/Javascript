@@ -5,7 +5,7 @@
 <script type="text/javascript">
 
 
-function band (singer,guitarist)
+function band (singer,guitarist)//constructor function
 {
     this.singer=singer;
     this.guitarist=guitarist;
@@ -15,8 +15,22 @@ function band (singer,guitarist)
     }
 }
 var p = new band ("James","Kirk");
-p.changeSinger("Dave");
+p.changeSinger("Dave");// calling through function 
 document.write(p.singer);
+/*
+function DOB (name,age)//constructor function
+{
+    this.name=name;
+    this.age=age;
+    this.bornYear=dateofBirth;//using object's properties inside function using this keyword
+}
+function dateofBirth();
+{
+    return 2019 - this.age;
+}
+var a= new DOB("Subodh", 20);
+document.write(a.bornYear());// calling method through property
+*/
 </script>
 </head>
 <body></body>
