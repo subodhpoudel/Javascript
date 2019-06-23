@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            ChildNodes
+        </title>
+        <script>
+            
+            
+            function changeText ()
+            {
+                 a = document.getElementById('nodes'); // s is global variable.
+                var arr=a.childNodes;
+                for (var x=0; x<arr.length; x++)
+            {
+                arr[x].innerHTML="music is life";
+            }
+
+
+            }
+            function addText()
+            {
+                var b= document.createElement('p');
+                b.textContent="I love guitar afterall";
+                a.appendChild(b);
+            }
+        </script>
+    </head>
+    <body>
+        <div id="nodes">
+            <p> I love metal</p>
+            <p> I love prog</p>
+            <p> I love art</p>
+        </div>
+        <button  onclick="changeText()" value="Change Text"> Change </button>
+        <button  onclick="addText()" value="Change Text"> Add more </button>
+    </body>
+</html>
